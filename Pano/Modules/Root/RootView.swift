@@ -11,7 +11,24 @@ struct RootView: View {
                     numberOfComments: 8,
                     createdAtText: "1 dk once"
                 )
-            )
+            ).swipeActions {
+                Button {
+                    print("Tapped")
+                } label: {
+                    Image(systemName: "square.and.arrow.up")
+                        .imageScale(.small)
+                        .foregroundColor(.white)
+                }
+                .tint(.blue)
+                Button {
+                    print("Tapped")
+                } label: {
+                    Image(systemName: "message")
+                        .imageScale(.small)
+                        .foregroundColor(.white)
+                }
+                .tint(.green)
+            }
             PanoHomeRowView(
                 item: PanoHomeItem(
                     title: "Ut enim ad minim veniam",
@@ -23,7 +40,7 @@ struct RootView: View {
             )
             PanoHomeRowView(
                 item: PanoHomeItem(
-                    title: "Duis aute irure dolor in reprehenderit in voluptate",
+                    title: "Duis aute irure dolor in reprehenderit in voluptate aute irure dolor in reprehenderit in voluptate",
                     url: "www.google.com",
                     authorName: "theBeast",
                     numberOfComments: 6,
@@ -46,6 +63,7 @@ struct RootView: View {
 struct RootView_Previews: PreviewProvider {
     static var previews: some View {
         RootView()
+            .preferredColorScheme(.dark)
     }
 }
 
@@ -106,11 +124,33 @@ struct PanoHomeRowView: View {
     }
     
     var body: some View {
-        VStack(
-            alignment: .leading,
-            spacing: 8) {
-                Text(attributedTitle + "  " + attributedURL) // TODO: Adjust line height between title and URL
-                Text(attributedAuthorName + attributedDivider + attributedCommentCount + attributedDivider + attributedCreatedAt)
+        VStack(alignment: .leading, spacing: 8) {
+            HStack(alignment: .top, spacing: 8) {
+                Button {
+                    print("Tapped")
+                } label: {
+                    VStack(alignment: .center, spacing: 8) {
+                        Image(systemName: "arrowtriangle.up.fill")
+                            .padding(EdgeInsets(top: 4, leading: 16, bottom: 0, trailing: 16))
+                            .imageScale(.small)
+                        Text("1K") // TODO: Limit text width
+                            .lineLimit(1)
+                            .font(Font.headline)
+                    }.frame(width: 60)
+                }
+                .foregroundColor(.secondary)
+                VStack(
+                    alignment: .leading,
+                    spacing: 8) {
+                        Text(attributedTitle)
+                            .lineLimit(2)
+                        Text(attributedURL)
+                    }
+            }.padding(EdgeInsets(top: 4, leading: 0, bottom: 4, trailing: 0))
+            HStack() {
+                Spacer()
+                Text(attributedAuthorName + attributedDivider + attributedCreatedAt)
             }
+        }
     }
 }
