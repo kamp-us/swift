@@ -9,13 +9,14 @@
 /* Begin PBXBuildFile section */
 		B9721A9129FC5D2C004B2051 /* Main.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9721A9029FC5D2C004B2051 /* Main.swift */; };
 		B9721A9529FC5D2E004B2051 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B9721A9429FC5D2E004B2051 /* Assets.xcassets */; };
-		B9721A9829FC5D2E004B2051 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B9721A9729FC5D2E004B2051 /* Preview Assets.xcassets */; };
 		B9721AA229FC5D2F004B2051 /* PanoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9721AA129FC5D2F004B2051 /* PanoTests.swift */; };
 		B9721AAC29FC5D2F004B2051 /* PanoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9721AAB29FC5D2F004B2051 /* PanoUITests.swift */; };
 		B9721AAE29FC5D2F004B2051 /* PanoUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9721AAD29FC5D2F004B2051 /* PanoUITestsLaunchTests.swift */; };
-		B9721ABC2A0AE12F004B2051 /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = B9721ABB2A0AE12F004B2051 /* ComposableArchitecture */; };
-		B9721AC02A0AEA2C004B2051 /* RootFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9721ABF2A0AEA2C004B2051 /* RootFeature.swift */; };
-		B9721AC32A0AEDC7004B2051 /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9721AC22A0AEDC7004B2051 /* RootView.swift */; };
+		B9721AC62A16C4B6004B2051 /* PanoItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9721AC52A16C4B6004B2051 /* PanoItem.swift */; };
+		B9A992202A269A5C008C4EAF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B9A9921F2A269A5C008C4EAF /* Preview Assets.xcassets */; };
+		B9A992222A269A7F008C4EAF /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9A992212A269A7F008C4EAF /* HomeView.swift */; };
+		B9A992242A269AFC008C4EAF /* HomePanoItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9A992232A269AFC008C4EAF /* HomePanoItemView.swift */; };
+		B9A992272A26A48F008C4EAF /* LinkPreview in Frameworks */ = {isa = PBXBuildFile; productRef = B9A992262A26A48F008C4EAF /* LinkPreview */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,14 +40,15 @@
 		B9721A8D29FC5D2C004B2051 /* Pano.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pano.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B9721A9029FC5D2C004B2051 /* Main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Main.swift; sourceTree = "<group>"; };
 		B9721A9429FC5D2E004B2051 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		B9721A9729FC5D2E004B2051 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		B9721A9D29FC5D2F004B2051 /* PanoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PanoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B9721AA129FC5D2F004B2051 /* PanoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PanoTests.swift; sourceTree = "<group>"; };
 		B9721AA729FC5D2F004B2051 /* PanoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PanoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B9721AAB29FC5D2F004B2051 /* PanoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PanoUITests.swift; sourceTree = "<group>"; };
 		B9721AAD29FC5D2F004B2051 /* PanoUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PanoUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		B9721ABF2A0AEA2C004B2051 /* RootFeature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootFeature.swift; sourceTree = "<group>"; };
-		B9721AC22A0AEDC7004B2051 /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
+		B9721AC52A16C4B6004B2051 /* PanoItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PanoItem.swift; sourceTree = "<group>"; };
+		B9A9921F2A269A5C008C4EAF /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		B9A992212A269A7F008C4EAF /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		B9A992232A269AFC008C4EAF /* HomePanoItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePanoItemView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,7 +56,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B9721ABC2A0AE12F004B2051 /* ComposableArchitecture in Frameworks */,
+				B9A992272A26A48F008C4EAF /* LinkPreview in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -98,19 +100,12 @@
 		B9721A8F29FC5D2C004B2051 /* Pano */ = {
 			isa = PBXGroup;
 			children = (
+				B9721AC42A16C4A2004B2051 /* Models */,
 				B9721ABD2A0AE75E004B2051 /* Modules */,
-				B9721A9429FC5D2E004B2051 /* Assets.xcassets */,
-				B9721A9629FC5D2E004B2051 /* Preview Content */,
+				B9A9921E2A269A29008C4EAF /* Preview Content */,
+				B9A9921D2A2699C1008C4EAF /* Resources */,
 			);
 			path = Pano;
-			sourceTree = "<group>";
-		};
-		B9721A9629FC5D2E004B2051 /* Preview Content */ = {
-			isa = PBXGroup;
-			children = (
-				B9721A9729FC5D2E004B2051 /* Preview Assets.xcassets */,
-			);
-			path = "Preview Content";
 			sourceTree = "<group>";
 		};
 		B9721AA029FC5D2F004B2051 /* PanoTests */ = {
@@ -134,18 +129,18 @@
 			isa = PBXGroup;
 			children = (
 				B9721AC12A0AED94004B2051 /* Main */,
-				B9721ABE2A0AE769004B2051 /* Root */,
+				B9721ABE2A0AE769004B2051 /* Home */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
 		};
-		B9721ABE2A0AE769004B2051 /* Root */ = {
+		B9721ABE2A0AE769004B2051 /* Home */ = {
 			isa = PBXGroup;
 			children = (
-				B9721ABF2A0AEA2C004B2051 /* RootFeature.swift */,
-				B9721AC22A0AEDC7004B2051 /* RootView.swift */,
+				B9A992212A269A7F008C4EAF /* HomeView.swift */,
+				B9A992232A269AFC008C4EAF /* HomePanoItemView.swift */,
 			);
-			path = Root;
+			path = Home;
 			sourceTree = "<group>";
 		};
 		B9721AC12A0AED94004B2051 /* Main */ = {
@@ -154,6 +149,30 @@
 				B9721A9029FC5D2C004B2051 /* Main.swift */,
 			);
 			path = Main;
+			sourceTree = "<group>";
+		};
+		B9721AC42A16C4A2004B2051 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				B9721AC52A16C4B6004B2051 /* PanoItem.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		B9A9921D2A2699C1008C4EAF /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				B9721A9429FC5D2E004B2051 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		B9A9921E2A269A29008C4EAF /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				B9A9921F2A269A5C008C4EAF /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -173,7 +192,7 @@
 			);
 			name = Pano;
 			packageProductDependencies = (
-				B9721ABB2A0AE12F004B2051 /* ComposableArchitecture */,
+				B9A992262A26A48F008C4EAF /* LinkPreview */,
 			);
 			productName = Pano;
 			productReference = B9721A8D29FC5D2C004B2051 /* Pano.app */;
@@ -248,7 +267,7 @@
 			);
 			mainGroup = B9721A8429FC5D2C004B2051;
 			packageReferences = (
-				B9721ABA2A0AE12F004B2051 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */,
+				B9A992252A26A48F008C4EAF /* XCRemoteSwiftPackageReference "LinkPreview" */,
 			);
 			productRefGroup = B9721A8E29FC5D2C004B2051 /* Products */;
 			projectDirPath = "";
@@ -266,7 +285,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B9721A9829FC5D2E004B2051 /* Preview Assets.xcassets in Resources */,
+				B9A992202A269A5C008C4EAF /* Preview Assets.xcassets in Resources */,
 				B9721A9529FC5D2E004B2051 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -292,8 +311,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B9721AC32A0AEDC7004B2051 /* RootView.swift in Sources */,
-				B9721AC02A0AEA2C004B2051 /* RootFeature.swift in Sources */,
+				B9A992222A269A7F008C4EAF /* HomeView.swift in Sources */,
+				B9721AC62A16C4B6004B2051 /* PanoItem.swift in Sources */,
+				B9A992242A269AFC008C4EAF /* HomePanoItemView.swift in Sources */,
 				B9721A9129FC5D2C004B2051 /* Main.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -623,21 +643,21 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		B9721ABA2A0AE12F004B2051 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */ = {
+		B9A992252A26A48F008C4EAF /* XCRemoteSwiftPackageReference "LinkPreview" */ = {
 			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/pointfreeco/swift-composable-architecture#installation";
+			repositoryURL = "https://github.com/NuPlay/LinkPreview";
 			requirement = {
 				kind = upToNextMajorVersion;
-				minimumVersion = 0.9.0;
+				minimumVersion = 1.0.0;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		B9721ABB2A0AE12F004B2051 /* ComposableArchitecture */ = {
+		B9A992262A26A48F008C4EAF /* LinkPreview */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = B9721ABA2A0AE12F004B2051 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */;
-			productName = ComposableArchitecture;
+			package = B9A992252A26A48F008C4EAF /* XCRemoteSwiftPackageReference "LinkPreview" */;
+			productName = LinkPreview;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
