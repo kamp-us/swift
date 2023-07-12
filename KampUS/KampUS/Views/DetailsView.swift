@@ -12,7 +12,7 @@ struct DetailsView: View {
     @EnvironmentObject var dummy: DummyData
     
     @State private var searchResult: String = ""
-    var item: PanoHomeItem
+    var item: Post
     
     @State private var isBookmarked: Bool = false
     
@@ -21,24 +21,24 @@ struct DetailsView: View {
             VStack(alignment: .leading) {
                 Text(item.title)
                 
-                LinkPreview(url: URL(string: item.url))
+                LinkPreview(url: URL(string: item.url ?? ""))
                     .fixedSize(horizontal: false, vertical: true)
                 
-                    Text("Posted by \(item.authorName)")
+                Text("Posted by \(item.owner.userName ?? "Unkown")")
                         .font(.system(size: 14))
                 
                 HStack(alignment: .lastTextBaseline, spacing: 8) {
                     HStack(spacing: 2) {
                         Image(systemName: "arrow.up")
-                        Text("\(item.numberOfLikes)")
+                        Text("\(item.upvotes.count)")
                     }
                     HStack(spacing: 2) {
                         Image(systemName: "message")
-                        Text("\(item.numberOfComments)")
+                        Text("\(item.comments.count)")
                     }
                     HStack(spacing: 2) {
                         Image(systemName: "clock")
-                        Text(item.createdAtText)
+                        Text("\(item.createdAt, format: Date.FormatStyle().day().month().year())")
                     }
                     Spacer()
                 }
@@ -88,9 +88,9 @@ struct DetailsView: View {
                 .font(.system(size: 25))
                 
             }//VStack end
-            
         }//ScrollView end
-        .navigationTitle("\(item.numberOfComments) Comments")
+        .padding()
+        .navigationTitle("\(item.comments.count) Comments")
         .navigationBarTitleDisplayMode(.inline)
         .searchable(text: $searchResult, prompt: "Find in Comments")
         .toolbar {

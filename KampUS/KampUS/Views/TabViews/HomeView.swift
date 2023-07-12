@@ -20,7 +20,7 @@ struct HomeView: View {
         NavigationStack {
             
             VStack {
-                List(data.items) { item in
+                List(data.posts) { item in
                     NavigationLink {
                         DetailsView(item: item)
                     } label: {

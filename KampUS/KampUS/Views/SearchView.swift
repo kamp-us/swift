@@ -13,8 +13,8 @@ struct SearchView: View {
     
     var body: some View {
         NavigationStack {
-            List(dummy.items) { item in
-                
+            List {
+                Text("Test")
                 
             }
             .navigationTitle("Search")

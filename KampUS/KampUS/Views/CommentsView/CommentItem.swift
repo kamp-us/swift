@@ -13,11 +13,11 @@ struct CommentItem: View {
     var body: some View {
         VStack(alignment: .leading) {
             HStack(spacing: 10) {
-                Text(comment.commentAuthor)
+                Text("")
                     .font(.system(size: 17, weight: .semibold))
                 HStack(spacing: 2) {
                     Image(systemName: "arrow.up")
-                    Text("\(comment.subCommentCount)")
+                    Text("Test")
                     Spacer()
                     Button {
                         
@@ -26,21 +26,14 @@ struct CommentItem: View {
                             .padding(.horizontal, 10)
                     }
 
-                    Text(comment.createdAt)
+                    Text("comment.createdAt")
                 }
                 .font(.system(size: 16, weight: .thin))
             }//HStack end
             
-            Text(comment.comment)
+            Text("comment.comment")
                 .padding(.vertical, 4)
             
         }.padding()
-    }
-}
-
-struct CommentItem_Previews: PreviewProvider {
-    static var previews: some View {
-        CommentItem(comment: Comment(authotID: UUID(), comment: "Test Comment and very and very long. Lorem ipsum dolar sit ames and something similar with that!", commentAuthor: "Test author", commentLike: 3, subCommentCount: 2, createdAt: "14 March 2021")
-        )
     }
 }

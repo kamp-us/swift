@@ -9,7 +9,7 @@ import SwiftUI
 import LinkPreview
 
 struct HomePanoItemView: View {
-    let item: PanoHomeItem
+    let item: Post
     
     @State var togglePreview = false
     
@@ -19,21 +19,24 @@ struct HomePanoItemView: View {
         VStack(alignment: .leading, spacing: 16) {
             Text(item.title)
             
-            LinkPreview(url: URL(string: item.url))
+            LinkPreview(url: URL(string: item.url ?? "www.google.com"))
                 .fixedSize(horizontal: false, vertical: true)
             
             HStack(alignment: .lastTextBaseline, spacing: 8) {
                 HStack(spacing: 2) {
                     Image(systemName: "arrow.up")
-                    Text("\(item.numberOfLikes)")
+                    Text("\(item.upvotes.count)")
+                    
                 }
                 HStack(spacing: 2) {
                     Image(systemName: "message")
-                    Text("\(item.numberOfComments)")
+                    Text("\(item.comments.count)")
+                    
                 }
                 HStack(spacing: 2) {
                     Image(systemName: "clock")
-                    Text(item.createdAtText)
+                    Text("5h")
+                    
                 }
                 
                 Spacer()
