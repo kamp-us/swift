@@ -7,7 +7,7 @@
 
 import Foundation
 
-class Comment {
+class Comment: Identifiable {
     let id: String
     var content: String
     
