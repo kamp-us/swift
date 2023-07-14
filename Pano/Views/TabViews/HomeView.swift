@@ -25,9 +25,7 @@ struct HomeView: View {
                         DetailsView(item: item)
                     } label: {
                         HomePanoItemView(item: item)
-                    }
-
-                       
+                    }                       
                 }
                 .listStyle(.plain)
                 
