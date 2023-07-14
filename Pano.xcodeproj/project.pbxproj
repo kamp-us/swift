@@ -26,6 +26,8 @@
 		755E18EB2A61645A00DE7F6C /* AddPostView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 755E18E82A61645A00DE7F6C /* AddPostView.swift */; };
 		755E18EC2A61645A00DE7F6C /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 755E18E92A61645A00DE7F6C /* HomeView.swift */; };
 		755E18EE2A61646B00DE7F6C /* DummyData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 755E18ED2A61646B00DE7F6C /* DummyData.swift */; };
+		755E18F22A616E5700DE7F6C /* EntryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 755E18F12A616E5700DE7F6C /* EntryView.swift */; };
+		755E18F52A61714F00DE7F6C /* TabbarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 755E18F42A61714F00DE7F6C /* TabbarView.swift */; };
 		B9721A9129FC5D2C004B2051 /* Main.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9721A9029FC5D2C004B2051 /* Main.swift */; };
 		B9721A9529FC5D2E004B2051 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B9721A9429FC5D2E004B2051 /* Assets.xcassets */; };
 		B9721AA229FC5D2F004B2051 /* PanoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9721AA129FC5D2F004B2051 /* PanoTests.swift */; };
@@ -72,6 +74,8 @@
 		755E18E82A61645A00DE7F6C /* AddPostView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AddPostView.swift; path = ../../../../../Documents/Swift/KampUS/KampUS/Views/TabViews/AddPostView.swift; sourceTree = "<group>"; };
 		755E18E92A61645A00DE7F6C /* HomeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HomeView.swift; path = ../../../../../Documents/Swift/KampUS/KampUS/Views/TabViews/HomeView.swift; sourceTree = "<group>"; };
 		755E18ED2A61646B00DE7F6C /* DummyData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DummyData.swift; path = ../../../../Documents/Swift/KampUS/KampUS/ViewModels/DummyData.swift; sourceTree = "<group>"; };
+		755E18F12A616E5700DE7F6C /* EntryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryView.swift; sourceTree = "<group>"; };
+		755E18F42A61714F00DE7F6C /* TabbarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabbarView.swift; sourceTree = "<group>"; };
 		B9721A8D29FC5D2C004B2051 /* Pano.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pano.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B9721A9029FC5D2C004B2051 /* Main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Main.swift; sourceTree = "<group>"; };
 		B9721A9429FC5D2E004B2051 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -120,11 +124,13 @@
 		755E18C52A6163C600DE7F6C /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				755E18F12A616E5700DE7F6C /* EntryView.swift */,
 				755E18D92A61641C00DE7F6C /* SearchView.swift */,
 				755E18DB2A61641C00DE7F6C /* SettingsView.swift */,
 				755E18DA2A61641C00DE7F6C /* ItemView.swift */,
-				755E18E62A61645100DE7F6C /* TabViews */,
+				755E18F32A616F1300DE7F6C /* Tabbar */,
 				755E18DF2A61643600DE7F6C /* ItemDetails */,
+				755E18E62A61645100DE7F6C /* TabViews */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -163,6 +169,14 @@
 				755E18E72A61645A00DE7F6C /* ProfileView.swift */,
 			);
 			path = TabViews;
+			sourceTree = "<group>";
+		};
+		755E18F32A616F1300DE7F6C /* Tabbar */ = {
+			isa = PBXGroup;
+			children = (
+				755E18F42A61714F00DE7F6C /* TabbarView.swift */,
+			);
+			path = Tabbar;
 			sourceTree = "<group>";
 		};
 		B9721A8429FC5D2C004B2051 = {
@@ -383,10 +397,12 @@
 				755E18D52A61640A00DE7F6C /* CommentModel.swift in Sources */,
 				755E18D12A61640A00DE7F6C /* UserModel.swift in Sources */,
 				755E18E42A61643F00DE7F6C /* DetailsView.swift in Sources */,
+				755E18F52A61714F00DE7F6C /* TabbarView.swift in Sources */,
 				755E18C82A6163FC00DE7F6C /* PostModel.swift in Sources */,
 				755E18DC2A61641C00DE7F6C /* SearchView.swift in Sources */,
 				755E18DE2A61641C00DE7F6C /* SettingsView.swift in Sources */,
 				755E18EC2A61645A00DE7F6C /* HomeView.swift in Sources */,
+				755E18F22A616E5700DE7F6C /* EntryView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
