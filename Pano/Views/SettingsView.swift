@@ -9,18 +9,13 @@ import SwiftUI
 
 struct SettingsView: View {
     @AppStorage("isPreviewShows") var isPreview = true
+    @AppStorage("IS_USER_LOGIN") var isUserLogin = false
+    
     var body: some View {
         VStack {
-            
-            
             Toggle("Preview Toggle", isOn: $isPreview)
+            Toggle("Login", isOn: $isUserLogin)
             
         }
-    }
-}
-
-struct SettingsView_Previews: PreviewProvider {
-    static var previews: some View {
-        SettingsView()
     }
 }

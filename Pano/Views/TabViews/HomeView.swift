@@ -11,8 +11,9 @@ struct HomeView: View {
     
     @EnvironmentObject var data: DummyData
     
-    
+    @AppStorage("IS_USER_LOGIN") var isUserLogin = false
     @AppStorage("Test") var isLoggin: Bool = false
+    @State private var showShearchLogin: Bool = false
     
     var body: some View {
         
@@ -57,23 +58,30 @@ struct HomeView: View {
                         .font(.system(size:23))
                 }
                 
-                NavigationLink {
-                    EmptyView()
-                } label: {
-                    Image(systemName: "magnifyingglass")
-                        .font(.system(size:17))
+                if isUserLogin {
+                    NavigationLink {
+                        EmptyView()
+                    } label: {
+                        Image(systemName: "magnifyingglass")
+                            .font(.system(size:17))
+                    }
+
+                } else {
+                    Button {
+                        showShearchLogin = true
+                    } label: {
+                        Image(systemName: "magnifyingglass")
+                            .font(.system(size:17))
+                    }
                 }
+            }// Toolbar end
+            .sheet(isPresented: $showShearchLogin) {
+                LoginRegisterView()
+                    .presentationDetents([.fraction(0.70)])
             }
             
         }
         
         
-    }
-}
-
-
-struct HomeView_Previews: PreviewProvider {
-    static var previews: some View {
-        HomeView()
     }
 }

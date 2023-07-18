@@ -8,9 +8,12 @@
 import SwiftUI
 
 struct TabbarView: View {
+    @AppStorage("IS_USER_LOGIN") var isUserLogin = false
+    
     @State var goToAddView: Bool = false
     @Binding var currentView: Int
     @State private var selected: Int = 1
+    
     var body: some View {
         HStack {
             Spacer()
@@ -51,7 +54,12 @@ struct TabbarView: View {
         }
         .font(.system(size: 25))
         .sheet(isPresented: $goToAddView) {
-            AddPostView()
-        }
+            if isUserLogin {
+                AddPostView()
+            } else {
+                LoginRegisterView()
+                    .presentationDetents([.fraction(0.70)])
+            }
+        }//Sheet end
     }
 }

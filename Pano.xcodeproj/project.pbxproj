@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		754BCCA72A66D0DC0012D940 /* LoginRegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 754BCCA62A66D0DC0012D940 /* LoginRegisterView.swift */; };
 		755E18F22A616E5700DE7F6C /* EntryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 755E18F12A616E5700DE7F6C /* EntryView.swift */; };
 		755E18F52A61714F00DE7F6C /* TabbarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 755E18F42A61714F00DE7F6C /* TabbarView.swift */; };
 		75A6B4462A6179C700E95A22 /* Account.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75A6B4452A6179C700E95A22 /* Account.swift */; };
@@ -55,6 +56,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		754BCCA62A66D0DC0012D940 /* LoginRegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRegisterView.swift; sourceTree = "<group>"; };
 		755E18F12A616E5700DE7F6C /* EntryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryView.swift; sourceTree = "<group>"; };
 		755E18F42A61714F00DE7F6C /* TabbarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabbarView.swift; sourceTree = "<group>"; };
 		75A6B4452A6179C700E95A22 /* Account.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Account.swift; sourceTree = "<group>"; };
@@ -113,6 +115,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		754BCCA52A66D0BA0012D940 /* LoginRegister */ = {
+			isa = PBXGroup;
+			children = (
+				754BCCA62A66D0DC0012D940 /* LoginRegisterView.swift */,
+			);
+			path = LoginRegister;
+			sourceTree = "<group>";
+		};
 		755E18C42A61635A00DE7F6C /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
@@ -124,10 +134,11 @@
 		755E18C52A6163C600DE7F6C /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				75A6B4572A617AC800E95A22 /* ItemView.swift */,
 				755E18F12A616E5700DE7F6C /* EntryView.swift */,
+				75A6B4572A617AC800E95A22 /* ItemView.swift */,
 				75A6B4592A617AE600E95A22 /* SettingsView.swift */,
 				75A6B45B2A617AF500E95A22 /* SearchView.swift */,
+				754BCCA52A66D0BA0012D940 /* LoginRegister */,
 				755E18F32A616F1300DE7F6C /* Tabbar */,
 				755E18DF2A61643600DE7F6C /* ItemDetails */,
 				755E18E62A61645100DE7F6C /* TabViews */,
@@ -402,6 +413,7 @@
 				755E18F22A616E5700DE7F6C /* EntryView.swift in Sources */,
 				75A6B4542A617A5600E95A22 /* User.swift in Sources */,
 				75A6B46A2A617B6400E95A22 /* DummyData.swift in Sources */,
+				754BCCA72A66D0DC0012D940 /* LoginRegisterView.swift in Sources */,
 				75A6B4602A617B1D00E95A22 /* CommentItem.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
