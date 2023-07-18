@@ -10,7 +10,7 @@ import SwiftUI
 struct ProfileView: View {
     @AppStorage("IS_USER_LOGIN") var isUserLogin = false
     
-    @State private var isPresented : Bool = false
+    @State var isPresentedSettings : Bool = false
     @EnvironmentObject var dummy: DummyData
     
     var body: some View {
@@ -26,7 +26,7 @@ struct ProfileView: View {
             .navigationTitle("Profile")
             .toolbar {
                 Button {
-                    isPresented = true
+                    isPresentedSettings = true
                 } label: {
                     Image(systemName: "gearshape")
                         .font(.system(size:22))
@@ -35,8 +35,8 @@ struct ProfileView: View {
             }
             
         }
-        .sheet(isPresented: $isPresented) {
-            SettingsView()
+        .sheet(isPresented: $isPresentedSettings) {
+            SettingsView(isPresentedSettings: $isPresentedSettings)
         }
         
     }
