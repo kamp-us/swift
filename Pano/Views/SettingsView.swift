@@ -8,8 +8,12 @@
 import SwiftUI
 
 struct SettingsView: View {
+    @AppStorage("isPreviewShows") var isPreview = true
     var body: some View {
         VStack {
+            
+            
+            Toggle("Preview Toggle", isOn: $isPreview)
             
         }
     }

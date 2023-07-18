@@ -10,6 +10,8 @@ import LinkPreview
 
 struct DetailsView: View {
     
+    @AppStorage("isPreviewShows") var isPreview = true
+    
     @State private var searchResult: String = ""
     var item: Post
     
@@ -29,8 +31,17 @@ struct DetailsView: View {
                 
                 Text(item.title)
                 
-                LinkPreview(url: URL(string: item.url ?? ""))
-                    .fixedSize(horizontal: false, vertical: true)
+                if isPreview {
+                    LinkPreview(url: URL(string: item.url ?? "www.google.com"))
+                        .fixedSize(horizontal: false, vertical: true)
+                } else {
+                    if item.url != nil {
+                        Link(destination: URL(string: item.url ?? "www.google.com")!) {
+                            Text("Click this and go to content.")
+                        }.padding(.vertical)
+                    }
+                }
+
                 
                 Text("Posted by \(item.owner.userName ?? "Unkown")")
                         .font(.system(size: 14))

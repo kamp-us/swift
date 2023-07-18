@@ -11,8 +11,9 @@ import LinkPreview
 struct HomePanoItemView: View {
     let item: Post
     
-    @State var togglePreview = false
+    @AppStorage("isPreviewShows") var isPreview = true
     
+    @State var togglePreview = false
     @State private var isMore: Bool = false
     
     var body: some View {
@@ -27,9 +28,18 @@ struct HomePanoItemView: View {
                 .cornerRadius(20)
             
             Text(item.title)
-        
-            LinkPreview(url: URL(string: item.url ?? "www.google.com"))
-                .fixedSize(horizontal: false, vertical: true)
+            
+            if isPreview {
+                LinkPreview(url: URL(string: item.url ?? "www.google.com"))
+                    .fixedSize(horizontal: false, vertical: true)
+            } else {
+                if item.url != nil {
+                    Link(destination: URL(string: item.url ?? "www.google.com")!) {
+                        Text("Click this and go to content.")
+                    }.padding(.vertical)
+                }
+            }
+
             
             HStack(alignment: .lastTextBaseline, spacing: 8) {
                 HStack(spacing: 2) {
