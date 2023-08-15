@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		751736892A8B79AF0079C646 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 751736882A8B79AF0079C646 /* Constants.swift */; };
 		754BCCA72A66D0DC0012D940 /* LoginRegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 754BCCA62A66D0DC0012D940 /* LoginRegisterView.swift */; };
 		755E18F22A616E5700DE7F6C /* EntryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 755E18F12A616E5700DE7F6C /* EntryView.swift */; };
 		755E18F52A61714F00DE7F6C /* TabbarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 755E18F42A61714F00DE7F6C /* TabbarView.swift */; };
@@ -60,6 +61,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		751736882A8B79AF0079C646 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		754BCCA62A66D0DC0012D940 /* LoginRegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRegisterView.swift; sourceTree = "<group>"; };
 		755E18F12A616E5700DE7F6C /* EntryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryView.swift; sourceTree = "<group>"; };
 		755E18F42A61714F00DE7F6C /* TabbarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabbarView.swift; sourceTree = "<group>"; };
@@ -123,6 +125,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		751736872A8B79A30079C646 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				751736882A8B79AF0079C646 /* Constants.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
 		754BCCA52A66D0BA0012D940 /* LoginRegister */ = {
 			isa = PBXGroup;
 			children = (
@@ -234,6 +244,7 @@
 			isa = PBXGroup;
 			children = (
 				B9721A9029FC5D2C004B2051 /* Main.swift */,
+				751736872A8B79A30079C646 /* Helpers */,
 				755E18C62A6163CA00DE7F6C /* Models */,
 				755E18C52A6163C600DE7F6C /* Views */,
 				755E18C42A61635A00DE7F6C /* ViewModels */,
@@ -423,6 +434,7 @@
 				75A6B45A2A617AE600E95A22 /* SettingsView.swift in Sources */,
 				75A6B4522A617A4500E95A22 /* Upvote.swift in Sources */,
 				7584C0DE2A6BD89C009AF67F /* withMobileButton.swift in Sources */,
+				751736892A8B79AF0079C646 /* Constants.swift in Sources */,
 				755E18F52A61714F00DE7F6C /* TabbarView.swift in Sources */,
 				75A6B45C2A617AF500E95A22 /* SearchView.swift in Sources */,
 				75A6B4662A617B4D00E95A22 /* ProfileView.swift in Sources */,
