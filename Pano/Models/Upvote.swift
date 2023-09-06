@@ -7,7 +7,7 @@
 
 import Foundation
 
-class Upvote {
+struct Upvote {
     let id: String
 
     let postID: String
@@ -20,15 +20,5 @@ class Upvote {
     let updatedAt: Date
     let deletedAt: Date
 
-    init(id: String, postID: String, post: Post, userID: String, owner: User, createdAt: Date, updatedAt: Date, deletedAt: Date) {
-        self.id = id
-        self.postID = postID
-        self.post = post
-        self.userID = userID
-        self.owner = owner
-        self.createdAt = createdAt
-        self.updatedAt = updatedAt
-        self.deletedAt = deletedAt
-    }
 
 }

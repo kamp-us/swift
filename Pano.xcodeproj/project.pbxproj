@@ -169,13 +169,13 @@
 			isa = PBXGroup;
 			children = (
 				75A6B4452A6179C700E95A22 /* Account.swift */,
+				75A6B4532A617A5600E95A22 /* User.swift */,
 				75A6B4472A6179E100E95A22 /* Comment.swift */,
 				75A6B4492A6179FE00E95A22 /* CommentUpvote.swift */,
 				75A6B44B2A617A1A00E95A22 /* Post.swift */,
 				75A6B44D2A617A2900E95A22 /* Session.swift */,
 				75A6B44F2A617A3600E95A22 /* Theme.swift */,
 				75A6B4512A617A4500E95A22 /* Upvote.swift */,
-				75A6B4532A617A5600E95A22 /* User.swift */,
 				75A6B4552A617A6400E95A22 /* UserPreference.swift */,
 			);
 			path = Models;

@@ -7,7 +7,7 @@
 
 import Foundation
 
-class User {
+struct User {
     let id: String
     var name: String?
     var userName: String?
@@ -31,26 +31,5 @@ class User {
     var preference: UserPreference?
     var notifications: [Notification]
     var notifies: [Notification]
-
-    init(id: String, name: String? = nil, userName: String? = nil, email: String? = nil, emailVerified: Date, image: String? = nil, accounts: [Account], sessions: [Session], posts: [Post], comments: [Comment], commentUpvotes: [CommentUpvote], upvotes: [Upvote], createdAt: Date, updatedAt: Date, deletedAt: Date, preference: UserPreference? = nil, notifications: [Notification], notifies: [Notification]) {
-        self.id = id
-        self.name = name
-        self.userName = userName
-        self.email = email
-        self.emailVerified = emailVerified
-        self.image = image
-        self.accounts = accounts
-        self.sessions = sessions
-        self.posts = posts
-        self.comments = comments
-        self.commentUpvotes = commentUpvotes
-        self.upvotes = upvotes
-        self.createdAt = createdAt
-        self.updatedAt = updatedAt
-        self.deletedAt = deletedAt
-        self.preference = preference
-        self.notifications = notifications
-        self.notifies = notifies
-    }
 
 }
