@@ -11,7 +11,7 @@ struct TabbarView: View {
     @AppStorage("IS_USER_LOGIN") var isUserLogin = false
     
     @State var goToAddView: Bool = false
-    @Binding var currentView: Int
+    @Binding var currentView: TabViewSelection
     @State private var selected: Int = 1
     
     var body: some View {
@@ -24,7 +24,7 @@ struct TabbarView: View {
             }
             .opacity(selected == 1 ? 1 : 0.5)
             .onTapGesture {
-                currentView = 1
+                currentView = .home
                 selected = 1
             }
             Spacer()
@@ -46,7 +46,7 @@ struct TabbarView: View {
             }
             .opacity(selected == 3 ? 1 : 0.5)
             .onTapGesture {
-                currentView = 2
+                currentView = .profile
                 selected = 3
             }
             Spacer()

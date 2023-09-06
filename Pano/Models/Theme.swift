@@ -8,6 +8,6 @@
 import Foundation
 
 enum Theme: Codable {
-  case LIGHT
-  case DARK
+  case light
+  case dark
 }

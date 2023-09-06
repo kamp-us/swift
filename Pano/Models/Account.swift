@@ -24,5 +24,4 @@ struct Account: Codable, Identifiable {
 
     var user: User
 
-
 }

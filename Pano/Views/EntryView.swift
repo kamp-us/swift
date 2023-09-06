@@ -8,22 +8,31 @@
 import SwiftUI
 
 struct EntryView: View {
-    @State var currentView: Int = 1
+    @State var currentView: TabViewSelection = .home
+    
     var body: some View {
         VStack {
-            if currentView == 1 {
+            switch currentView {
+            case .home:
                 HomeView()
-            } else if currentView == 2 {
+            case .addPost:
+                AddPostView()
+            case .profile:
                 ProfileView()
-            } else {
-                HomeView()
             }
             
-         Spacer()
+            Spacer()
             
             TabbarView(currentView: $currentView)
         }
     }
+}
+
+
+enum TabViewSelection {
+    case home
+    case addPost
+    case profile
 }
 
 
