@@ -7,7 +7,7 @@
 
 import Foundation
 
-class UserPreference {
+class UserPreference: Codable {
     var theme: Theme
     var user: User
     var userID: String

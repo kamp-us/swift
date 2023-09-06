@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		750F88FD2AA8BF010085EC57 /* Notification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 750F88FC2AA8BF010085EC57 /* Notification.swift */; };
 		751736892A8B79AF0079C646 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 751736882A8B79AF0079C646 /* Constants.swift */; };
 		754BCCA72A66D0DC0012D940 /* LoginRegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 754BCCA62A66D0DC0012D940 /* LoginRegisterView.swift */; };
 		755E18F22A616E5700DE7F6C /* EntryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 755E18F12A616E5700DE7F6C /* EntryView.swift */; };
@@ -61,6 +62,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		750F88FC2AA8BF010085EC57 /* Notification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Notification.swift; sourceTree = "<group>"; };
 		751736882A8B79AF0079C646 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		754BCCA62A66D0DC0012D940 /* LoginRegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRegisterView.swift; sourceTree = "<group>"; };
 		755E18F12A616E5700DE7F6C /* EntryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryView.swift; sourceTree = "<group>"; };
@@ -177,6 +179,7 @@
 				75A6B44F2A617A3600E95A22 /* Theme.swift */,
 				75A6B4512A617A4500E95A22 /* Upvote.swift */,
 				75A6B4552A617A6400E95A22 /* UserPreference.swift */,
+				750F88FC2AA8BF010085EC57 /* Notification.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -444,6 +447,7 @@
 				75A6B4682A617B5700E95A22 /* HomeView.swift in Sources */,
 				75A6B4622A617B2F00E95A22 /* SubCommentView.swift in Sources */,
 				75A6B46C2A617BEC00E95A22 /* AddPostView.swift in Sources */,
+				750F88FD2AA8BF010085EC57 /* Notification.swift in Sources */,
 				7584C0E52A6BD921009AF67F /* withEmailButton.swift in Sources */,
 				75A6B45E2A617B0D00E95A22 /* DetailsView.swift in Sources */,
 				755E18F22A616E5700DE7F6C /* EntryView.swift in Sources */,

@@ -8,7 +8,7 @@
 import Foundation
 
 
-struct Session {
+struct Session: Codable, Identifiable  {
     let id: String
     var sessionToken: String
     let userId: String

@@ -8,7 +8,7 @@
 import Foundation
 
 
-class CommentUpvote {
+class CommentUpvote: Codable, Identifiable  {
     let id: String
 
     let commentID: String

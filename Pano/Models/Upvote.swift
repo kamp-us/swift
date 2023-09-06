@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct Upvote {
+struct Upvote: Codable, Identifiable  {
     let id: String
 
     let postID: String
