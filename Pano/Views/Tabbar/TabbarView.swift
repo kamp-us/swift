@@ -57,7 +57,7 @@ struct TabbarView: View {
             if isUserLogin {
                 AddPostView()
             } else {
-                LoginRegisterView()
+                AuthorizationView()
                     .presentationDetents([.fraction(0.70)])
             }
         }//Sheet end

@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct LoginRegisterView: View {
+struct AuthorizationView: View {
     @AppStorage("IS_USER_LOGIN") var isUserLogin: Bool = false
     @State private var isApprove: Bool = false
     

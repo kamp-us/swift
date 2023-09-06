@@ -76,7 +76,7 @@ struct HomeView: View {
                 }
             }// Toolbar end
             .sheet(isPresented: $showShearchLogin) {
-                LoginRegisterView()
+                AuthorizationView()
                     .presentationDetents([.fraction(0.70)])
             }
             
