@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct TabbarView: View {
-    @AppStorage("IS_USER_LOGIN") var isUserLogin = false
+    @EnvironmentObject var userDefaults: UserDefaults
     
     @State var goToAddView: Bool = false
     @Binding var currentView: TabViewSelection
@@ -54,7 +54,7 @@ struct TabbarView: View {
         }
         .font(.system(size: 25))
         .sheet(isPresented: $goToAddView) {
-            if isUserLogin {
+            if userDefaults.isUserLogin {
                 AddPostView()
             } else {
                 AuthorizationView()

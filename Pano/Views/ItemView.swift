@@ -9,9 +9,8 @@ import SwiftUI
 import LinkPreview
 
 struct HomePanoItemView: View {
+    @EnvironmentObject var userDefaults: UserDefaults
     let item: Post
-    
-    @AppStorage("isPreviewShows") var isPreview = true
     
     @State var togglePreview = false
     @State private var isMore: Bool = false
@@ -29,7 +28,7 @@ struct HomePanoItemView: View {
             
             Text(item.title)
             
-            if isPreview {
+            if userDefaults.isPreview {
                 LinkPreview(url: URL(string: item.url ?? "www.google.com"))
                     .fixedSize(horizontal: false, vertical: true)
             } else {

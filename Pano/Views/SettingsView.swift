@@ -8,10 +8,7 @@
 import SwiftUI
 
 struct SettingsView: View {
-    @AppStorage("isPreviewShows") var isPreview: Bool = true
-    @AppStorage("IS_USER_LOGIN") var isUserLogin: Bool = false
-    
-    @AppStorage ("IS_THEME_DARK") var isThemeDark: Bool = false
+    @EnvironmentObject var userDefaults: UserDefaults
     
     @Binding var isPresentedSettings: Bool
     
@@ -20,13 +17,13 @@ struct SettingsView: View {
             List {
                 //Login Section will remove
                 Section {
-                    Toggle("Login", isOn: $isUserLogin)
+                    Toggle("Login", isOn: $userDefaults.isUserLogin)
                 } header: {
                     Text("ACCOUNT SETTINGS")
                 }
                 
                 Section {
-                    Toggle("Preview Toggle", isOn: $isPreview)
+                    Toggle("Preview Toggle", isOn: $userDefaults.isPreview)
                 } header: {
                     Text("VIEW OPTIONS")
                 }
@@ -38,7 +35,7 @@ struct SettingsView: View {
                 }
                 
                 Section {
-                    Toggle("Dark Theme", isOn: $isThemeDark)
+                    Toggle("Dark Theme", isOn: $userDefaults.isThemeDark)
                 } header: {
                     Text("THEME SETTINGS")
                 }

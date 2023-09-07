@@ -9,8 +9,7 @@ import SwiftUI
 import LinkPreview
 
 struct DetailsView: View {
-    
-    @AppStorage("isPreviewShows") var isPreview = true
+    @EnvironmentObject var userDefaults: UserDefaults
     
     @State private var searchResult: String = ""
     var item: Post
@@ -31,7 +30,7 @@ struct DetailsView: View {
                 
                 Text(item.title)
                 
-                if isPreview {
+                if userDefaults.isPreview {
                     LinkPreview(url: URL(string: item.url ?? "www.google.com"))
                         .fixedSize(horizontal: false, vertical: true)
                 } else {

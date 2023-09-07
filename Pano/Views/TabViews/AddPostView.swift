@@ -8,8 +8,6 @@
 import SwiftUI
 
 struct AddPostView: View {
-    @AppStorage("IS_USER_LOGIN") var isUserLogin = false
-    
     @State private var title: String = "Sample Title But a Little Bit Long"
     @State private var url: String = "https://example.com"
     @State private var authorName: String = "John Doe"

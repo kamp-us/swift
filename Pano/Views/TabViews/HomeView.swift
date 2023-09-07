@@ -8,11 +8,9 @@
 import SwiftUI
 
 struct HomeView: View {
-    
+    @EnvironmentObject var userDefaults: UserDefaults
     @EnvironmentObject var data: DummyData
     
-    @AppStorage("IS_USER_LOGIN") var isUserLogin = false
-    @AppStorage("Test") var isLoggin: Bool = false
     @State private var showShearchLogin: Bool = false
     
     var body: some View {
@@ -58,7 +56,7 @@ struct HomeView: View {
                         .font(.system(size:23))
                 }
                 
-                if isUserLogin {
+                if userDefaults.isUserLogin {
                     NavigationLink {
                         EmptyView()
                     } label: {

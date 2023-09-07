@@ -8,10 +8,9 @@
 import SwiftUI
 
 struct ProfileView: View {
-    @AppStorage("IS_USER_LOGIN") var isUserLogin = false
+    @EnvironmentObject var dummy: DummyData
     
     @State var isPresentedSettings : Bool = false
-    @EnvironmentObject var dummy: DummyData
     
     var body: some View {
         NavigationStack {

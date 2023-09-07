@@ -8,7 +8,6 @@
 import SwiftUI
 
 struct AuthorizationView: View {
-    @AppStorage("IS_USER_LOGIN") var isUserLogin: Bool = false
     @State private var isApprove: Bool = false
     
     var body: some View {
