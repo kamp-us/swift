@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct withEmailButton: View {
+struct AuthWithEmailButton: View {
     
     var body: some View {
         Button {

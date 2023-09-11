@@ -19,10 +19,10 @@ struct AuthorizationView: View {
                 .font(.system(size: 14, weight: .thin))
                 .padding(.bottom)
             
-            AuthwithMobileButton()
-            withGoogleButton()
-            withAppleButton()
-            withEmailButton()
+            AuthWithMobileButton()
+            AuthWithGoogleButton()
+            AuthWithAppleButton()
+            AuthWithEmailButton()
                 .padding(.bottom)
             
             HStack {

@@ -1,5 +1,5 @@
 //
-//  withAppleButton.swift
+//  withGoogleButton.swift
 //  Pano
 //
 //  Created by Serdar Onur KARADAĞ on 22.07.2023.
@@ -7,15 +7,15 @@
 
 import SwiftUI
 
-struct withAppleButton: View {
+struct AuthWithGoogleButton: View {
     var body: some View {
         Button {
             
         } label: {
             HStack {
-                Image(systemName: "apple.logo")
+                Image(systemName: "volleyball.fill")
                 Spacer()
-                Text("Continue with Apple")
+                Text("Continue with Google")
                 Spacer()
             }
             .font(.system(size: 20))

@@ -12,10 +12,10 @@
 		754BCCA72A66D0DC0012D940 /* AuthorizationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 754BCCA62A66D0DC0012D940 /* AuthorizationView.swift */; };
 		755E18F22A616E5700DE7F6C /* EntryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 755E18F12A616E5700DE7F6C /* EntryView.swift */; };
 		755E18F52A61714F00DE7F6C /* TabbarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 755E18F42A61714F00DE7F6C /* TabbarView.swift */; };
-		7584C0DE2A6BD89C009AF67F /* AuthwithMobileButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7584C0DD2A6BD89C009AF67F /* AuthwithMobileButton.swift */; };
-		7584C0E12A6BD8FB009AF67F /* withGoogleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7584C0E02A6BD8FB009AF67F /* withGoogleButton.swift */; };
-		7584C0E32A6BD910009AF67F /* withAppleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7584C0E22A6BD910009AF67F /* withAppleButton.swift */; };
-		7584C0E52A6BD921009AF67F /* withEmailButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7584C0E42A6BD921009AF67F /* withEmailButton.swift */; };
+		7584C0DE2A6BD89C009AF67F /* AuthWithMobileButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7584C0DD2A6BD89C009AF67F /* AuthWithMobileButton.swift */; };
+		7584C0E12A6BD8FB009AF67F /* AuthWithGoogleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7584C0E02A6BD8FB009AF67F /* AuthWithGoogleButton.swift */; };
+		7584C0E32A6BD910009AF67F /* AuthWithAppleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7584C0E22A6BD910009AF67F /* AuthWithAppleButton.swift */; };
+		7584C0E52A6BD921009AF67F /* AuthWithEmailButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7584C0E42A6BD921009AF67F /* AuthWithEmailButton.swift */; };
 		75A6B4462A6179C700E95A22 /* Account.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75A6B4452A6179C700E95A22 /* Account.swift */; };
 		75A6B4482A6179E100E95A22 /* Comment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75A6B4472A6179E100E95A22 /* Comment.swift */; };
 		75A6B44A2A6179FE00E95A22 /* CommentUpvote.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75A6B4492A6179FE00E95A22 /* CommentUpvote.swift */; };
@@ -68,10 +68,10 @@
 		754BCCA62A66D0DC0012D940 /* AuthorizationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorizationView.swift; sourceTree = "<group>"; };
 		755E18F12A616E5700DE7F6C /* EntryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryView.swift; sourceTree = "<group>"; };
 		755E18F42A61714F00DE7F6C /* TabbarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabbarView.swift; sourceTree = "<group>"; };
-		7584C0DD2A6BD89C009AF67F /* AuthwithMobileButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthwithMobileButton.swift; sourceTree = "<group>"; };
-		7584C0E02A6BD8FB009AF67F /* withGoogleButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = withGoogleButton.swift; sourceTree = "<group>"; };
-		7584C0E22A6BD910009AF67F /* withAppleButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = withAppleButton.swift; sourceTree = "<group>"; };
-		7584C0E42A6BD921009AF67F /* withEmailButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = withEmailButton.swift; sourceTree = "<group>"; };
+		7584C0DD2A6BD89C009AF67F /* AuthWithMobileButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthWithMobileButton.swift; sourceTree = "<group>"; };
+		7584C0E02A6BD8FB009AF67F /* AuthWithGoogleButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthWithGoogleButton.swift; sourceTree = "<group>"; };
+		7584C0E22A6BD910009AF67F /* AuthWithAppleButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthWithAppleButton.swift; sourceTree = "<group>"; };
+		7584C0E42A6BD921009AF67F /* AuthWithEmailButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthWithEmailButton.swift; sourceTree = "<group>"; };
 		75A6B4452A6179C700E95A22 /* Account.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Account.swift; sourceTree = "<group>"; };
 		75A6B4472A6179E100E95A22 /* Comment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Comment.swift; sourceTree = "<group>"; };
 		75A6B4492A6179FE00E95A22 /* CommentUpvote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentUpvote.swift; sourceTree = "<group>"; };
@@ -218,10 +218,10 @@
 		7584C0DF2A6BD89F009AF67F /* Buttons */ = {
 			isa = PBXGroup;
 			children = (
-				7584C0DD2A6BD89C009AF67F /* AuthwithMobileButton.swift */,
-				7584C0E02A6BD8FB009AF67F /* withGoogleButton.swift */,
-				7584C0E22A6BD910009AF67F /* withAppleButton.swift */,
-				7584C0E42A6BD921009AF67F /* withEmailButton.swift */,
+				7584C0DD2A6BD89C009AF67F /* AuthWithMobileButton.swift */,
+				7584C0E02A6BD8FB009AF67F /* AuthWithGoogleButton.swift */,
+				7584C0E22A6BD910009AF67F /* AuthWithAppleButton.swift */,
+				7584C0E42A6BD921009AF67F /* AuthWithEmailButton.swift */,
 			);
 			path = Buttons;
 			sourceTree = "<group>";
@@ -434,12 +434,12 @@
 				75A6B44A2A6179FE00E95A22 /* CommentUpvote.swift in Sources */,
 				75A6B4482A6179E100E95A22 /* Comment.swift in Sources */,
 				B9721A9129FC5D2C004B2051 /* Main.swift in Sources */,
-				7584C0E12A6BD8FB009AF67F /* withGoogleButton.swift in Sources */,
+				7584C0E12A6BD8FB009AF67F /* AuthWithGoogleButton.swift in Sources */,
 				75A6B4462A6179C700E95A22 /* Account.swift in Sources */,
 				75A6B44E2A617A2900E95A22 /* Session.swift in Sources */,
 				75A6B45A2A617AE600E95A22 /* SettingsView.swift in Sources */,
 				75A6B4522A617A4500E95A22 /* Upvote.swift in Sources */,
-				7584C0DE2A6BD89C009AF67F /* AuthwithMobileButton.swift in Sources */,
+				7584C0DE2A6BD89C009AF67F /* AuthWithMobileButton.swift in Sources */,
 				751736892A8B79AF0079C646 /* UserDefaults.swift in Sources */,
 				755E18F52A61714F00DE7F6C /* TabbarView.swift in Sources */,
 				75A6B45C2A617AF500E95A22 /* SearchView.swift in Sources */,
@@ -447,12 +447,12 @@
 				75A6B4582A617AC800E95A22 /* ItemView.swift in Sources */,
 				75A6B44C2A617A1A00E95A22 /* Post.swift in Sources */,
 				75CF62D12AAF295400BF5B6D /* TabType.swift in Sources */,
-				7584C0E32A6BD910009AF67F /* withAppleButton.swift in Sources */,
+				7584C0E32A6BD910009AF67F /* AuthWithAppleButton.swift in Sources */,
 				75A6B4682A617B5700E95A22 /* HomeView.swift in Sources */,
 				75A6B4622A617B2F00E95A22 /* SubCommentView.swift in Sources */,
 				75A6B46C2A617BEC00E95A22 /* AddPostView.swift in Sources */,
 				750F88FD2AA8BF010085EC57 /* Notification.swift in Sources */,
-				7584C0E52A6BD921009AF67F /* withEmailButton.swift in Sources */,
+				7584C0E52A6BD921009AF67F /* AuthWithEmailButton.swift in Sources */,
 				75A6B45E2A617B0D00E95A22 /* DetailsView.swift in Sources */,
 				755E18F22A616E5700DE7F6C /* EntryView.swift in Sources */,
 				75A6B4542A617A5600E95A22 /* User.swift in Sources */,
