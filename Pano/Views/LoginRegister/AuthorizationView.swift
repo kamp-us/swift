@@ -19,7 +19,7 @@ struct AuthorizationView: View {
                 .font(.system(size: 14, weight: .thin))
                 .padding(.bottom)
             
-            withMobileButton()
+            AuthwithMobileButton()
             withGoogleButton()
             withAppleButton()
             withEmailButton()

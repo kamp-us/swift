@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct withMobileButton: View {
+struct AuthwithMobileButton: View {
     var body: some View {
         Button {
             
