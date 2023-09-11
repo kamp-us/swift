@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct EntryView: View {
-    @State var currentView: TabViewSelection = .home
+    @State var currentView: TabType = .home
     
     var body: some View {
         VStack {
@@ -28,11 +28,5 @@ struct EntryView: View {
     }
 }
 
-
-enum TabViewSelection {
-    case home
-    case addPost
-    case profile
-}
 
 

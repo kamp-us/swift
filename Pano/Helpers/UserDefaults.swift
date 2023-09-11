@@ -10,9 +10,7 @@ import SwiftUI
 
 
 class UserDefaults: ObservableObject {
-    @AppStorage("IS_USER_LOGIN") var isUserLogin: Bool = false
-    @AppStorage("IS_THEME_DARK") var isThemeDark: Bool = false
+    @AppStorage("isUserLogin") var isUserLogin: Bool = false
+    @AppStorage("isThemeDark") var isThemeDark: Bool = false
     @AppStorage("isPreviewShows") var isPreview = true
 }
-
-

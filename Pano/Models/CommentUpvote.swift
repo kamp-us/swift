@@ -8,7 +8,7 @@
 import Foundation
 
 
-class CommentUpvote: Codable, Identifiable  {
+struct CommentUpvote: Codable, Identifiable  {
     let id: String
 
     let commentID: String
@@ -20,16 +20,5 @@ class CommentUpvote: Codable, Identifiable  {
     let createdAt: Date
     let updatedAt: Date
     let deletedAt: Date
-
-    init(id: String, commentID: String, comment: Comment, userID: String, owner: User, createdAt: Date, updatedAt: Date, deletedAt: Date) {
-        self.id = id
-        self.commentID = commentID
-        self.comment = comment
-        self.userID = userID
-        self.owner = owner
-        self.createdAt = createdAt
-        self.updatedAt = updatedAt
-        self.deletedAt = deletedAt
-    }
 
 }

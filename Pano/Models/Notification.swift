@@ -25,8 +25,8 @@ struct Notification: Codable, Identifiable {
 }
 
 enum NotificationType: Codable {
-  case UPVOTECOMMENT
-  case UPVOTEPOST
-  case COMMENT
-  case REPLY
+  case upvotecomment
+  case upvotepost
+  case comment
+  case reply
 }

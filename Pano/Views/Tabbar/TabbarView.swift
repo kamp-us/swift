@@ -11,26 +11,24 @@ struct TabbarView: View {
     @EnvironmentObject var userDefaults: UserDefaults
     
     @State var goToAddView: Bool = false
-    @Binding var currentView: TabViewSelection
-    @State private var selected: Int = 1
+    @Binding var currentView: TabType
     
     var body: some View {
         HStack {
             Spacer()
             VStack(spacing: 2) {
-                Image(systemName: "house.fill")
-                Text("Home")
+                Image(systemName: TabType.home.systemImageName)
+                Text(TabType.home.text)
                     .font(.system(size: 10))
             }
-            .opacity(selected == 1 ? 1 : 0.5)
+            .opacity(currentView == .home ? 1 : 0.5)
             .onTapGesture {
                 currentView = .home
-                selected = 1
             }
             Spacer()
             VStack(spacing: 2) {
-                Image(systemName: "plus.app.fill")
-                Text("Add Post")
+                Image(systemName: TabType.addPost.systemImageName)
+                Text(TabType.addPost.text)
                     .font(.system(size: 10))
             }
             .opacity(0.5)
@@ -40,14 +38,13 @@ struct TabbarView: View {
             Spacer()
         
             VStack(spacing: 2) {
-                Image(systemName: "person.fill")
-                Text("Profile")
+                Image(systemName: TabType.profile.systemImageName)
+                Text(TabType.profile.text)
                     .font(.system(size: 10))
             }
-            .opacity(selected == 3 ? 1 : 0.5)
+            .opacity(currentView == .profile ? 1 : 0.5)
             .onTapGesture {
                 currentView = .profile
-                selected = 3
             }
             Spacer()
 
