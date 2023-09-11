@@ -10,10 +10,9 @@ import SwiftUI
 struct SettingsView: View {
     @EnvironmentObject var userDefaults: UserDefaults
     
-    @Binding var isPresentedSettings: Bool
     
     var body: some View {
-        NavigationStack {
+
             List {
                 //Login Section will remove
                 Section {
@@ -42,8 +41,6 @@ struct SettingsView: View {
                 
             }
             .navigationBarTitle("Test", displayMode: .inline)
-            .navigationBarItems(leading:Button(action: {isPresentedSettings = false}, label: {Image(systemName: "multiply").font(.system(size: 20))}))
-        }
-        .foregroundColor(.primary)
+
     }
 }

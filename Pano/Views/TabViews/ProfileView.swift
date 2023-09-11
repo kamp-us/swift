@@ -10,8 +10,6 @@ import SwiftUI
 struct ProfileView: View {
     @EnvironmentObject var dummy: DummyData
     
-    @State var isPresentedSettings : Bool = false
-    
     var body: some View {
         NavigationStack {
             VStack(alignment: .leading) {
@@ -24,8 +22,8 @@ struct ProfileView: View {
             }//VStack end
             .navigationTitle("Profile")
             .toolbar {
-                Button {
-                    isPresentedSettings = true
+                NavigationLink {
+                    SettingsView()
                 } label: {
                     Image(systemName: "gearshape")
                         .font(.system(size:22))
@@ -33,9 +31,6 @@ struct ProfileView: View {
 
             }
             
-        }
-        .sheet(isPresented: $isPresentedSettings) {
-            SettingsView(isPresentedSettings: $isPresentedSettings)
         }
         
     }
